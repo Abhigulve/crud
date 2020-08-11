@@ -1,4 +1,4 @@
-package model;
+package com.crud.crud.model;
 
 
 import java.util.List;

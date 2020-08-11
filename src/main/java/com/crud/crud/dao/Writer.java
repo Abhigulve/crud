@@ -1,6 +1,6 @@
 package com.crud.crud.dao;
 
-import model.User;
+import com.crud.crud.model.User;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;

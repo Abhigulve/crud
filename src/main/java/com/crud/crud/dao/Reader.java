@@ -1,13 +1,13 @@
 package com.crud.crud.dao;
 
-import model.Organisation;
-import model.Product;
-import model.User;
+import com.crud.crud.model.Organisation;
+import com.crud.crud.model.Product;
+import com.crud.crud.model.User;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
+
 @Service
 public class Reader {
 

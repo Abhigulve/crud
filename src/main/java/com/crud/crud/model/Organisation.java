@@ -1,4 +1,4 @@
-package model;
+package com.crud.crud.model;
 
 public class Organisation {
     public Organisation(String name) {

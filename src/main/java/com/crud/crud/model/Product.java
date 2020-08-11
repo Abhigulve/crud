@@ -1,4 +1,4 @@
-package model;
+package com.crud.crud.model;
 
 public class Product {
     private String product;

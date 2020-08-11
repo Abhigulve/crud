@@ -1,8 +1,10 @@
-package controller;
+package com.crud.crud.controller;
 
 import com.crud.crud.service.SubscribeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import javax.websocket.server.PathParam;
 
 @RestController
 @RequestMapping("/test")
@@ -16,8 +18,8 @@ public class PostController {
         return "Done";
     }
 
-    @RequestMapping(value = "/subscribe", method = RequestMethod.POST)
-    public String subscribe(@RequestParam(value = "productName") String productName, @RequestParam(name = "userId") String userId) {
+    @RequestMapping(value = "/subscribe/{productName}/{userId}", method = RequestMethod.PUT)
+    public String subscribe(@PathVariable(value = "productName") String productName, @PathVariable(name = "userId") String userId) {
         return subscribeService.subscribe(userId, productName);
     }
 }
